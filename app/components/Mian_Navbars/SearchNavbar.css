@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+.main_div {
+    margin-bottom: 20px;
+    height: 100%;
+    margin-top: 20px;
+    z-index: 3;
+    position: relative;
+    display: flex;
+    padding-left: 49px;
+    padding-right: 48px;
+}
+
+input {
+    width: 70%;
+}
+
+.Search_input {
+    height: 40px;
+    position: relative;
+    width: 54%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1200px;
+    border: 1px solid rgb(193, 189, 189);
+    color: rgb(194, 187, 187);
+    display: flex;
+    overflow: hidden;
+}
+
+.search {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 14px;
+}
+
+.allCategories {
+    position: fixed;
+    /* right: 27.3%; */
+    top: 99px;
+    border: 1px solid rgb(219, 218, 218);
+    color: black;
+    padding: 10px 10px;
+    background-color: rgb(253, 255, 255);
+    font-size: larger;
+    cursor: pointer;
+
+}
+
+.All_categories {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+    background-color: rgb(229, 232, 232);
+    color: black;
+    width: 25%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.two_icon {
+    margin: 0px 15px;
+    display: flex;
+    font-size: 20px;
+
+}
+
+.search_btn_one{
+    background-color: rgb(232, 231, 231);
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px;
+}
+
+.search_btn_two{
+    margin: 0px 5px;
+    background-color: rgb(232, 231, 231);
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bazar_img{
+    margin-right: 11%;
+    width: 93px;
+    margin-left: 10px;
+}

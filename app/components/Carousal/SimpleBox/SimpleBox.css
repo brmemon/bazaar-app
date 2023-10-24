@@ -1,0 +1,69 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+.Rating_div {
+    display: flex;
+}
+
+.Rating {
+    border-radius: 10px;
+    padding: 16px 16px;
+    background-color: white;
+
+}
+
+.Rating_names {
+    text-align: center;
+    margin-top: 2px;
+}
+
+.Rating_value {
+    margin-left: 30px;
+    color: rgb(233, 42, 42);
+    padding: 0 !important;
+}
+
+
+
+
+.FeaturedBrand_div {
+    display: flex;
+}
+
+.Featured_div {
+    padding: 16px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.Featured_img {
+    border-radius: 10px;
+}
+
+
+
+
+
+.NewArrivals_div {
+    display: flex;
+}
+
+.Arrivals_div {
+    border-radius: 10px;
+    padding: 16px;
+    background-color: white;
+}
+
+.Arrivals_name {
+    font-size: 14px;
+}
+
+.Arrivals_value {
+    color: rgb(233, 42, 42);
+    padding: 0 !important;
+    margin: 0 !important;
+}

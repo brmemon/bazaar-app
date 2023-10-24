@@ -1,0 +1,142 @@
+.last_footer {
+    background-color: #222935;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.last_div {
+    padding: 1rem;
+}
+
+.footer_div {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    overflow: hidden;
+}
+
+.footer_display {
+    display: flex;
+}
+
+.Footer_logo_text {
+    width: 33%;
+}
+
+.bazaar_logo {
+    margin-bottom: 20px;
+}
+
+.para_one {
+    /* width: 34%; */
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-size: 14px;
+    color: #AEB4BE;
+}
+
+.play_app {
+    display: flex;
+    width: 100%;
+}
+
+.play_div {
+    margin: 8px;
+    border-radius: 5px;
+    padding: 6px 16px;
+    background: #161d2b;
+    width: fit-content;
+    display: flex;
+    gap: 8px;
+}
+
+.app_div {
+    margin: 8px;
+    border-radius: 5px;
+    padding: 6px 16px;
+    background: #161d2b;
+    width: fit-content;
+    display: flex;
+    gap: 8px;
+}
+
+.play_img {
+    width: 20px;
+    height: 20px;
+}
+
+.play_text1 {
+    font-size: 9px;
+    color: white;
+}
+
+.play_text2 {
+    font-size: 15px;
+    color: white;
+}
+
+.play_store {
+    display: flex;
+    align-items: center;
+}
+
+.app_store {
+    display: flex;
+    align-items: center;
+}
+
+.about_us {
+    width: 16.66%;
+    padding-top: 10px;
+    padding-left: 24px;
+    color: #AEB4BE;
+}
+
+.customer_care {
+    width: 25%;
+    padding-top: 10px;
+    padding-left: 24px;
+    color: #AEB4BE;
+}
+
+.contact_us {
+    width: 25%;
+    padding-top: 10px;
+    padding-left: 24px;
+    color: #AEB4BE;
+}
+
+.aboutus {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    line-height: 1;
+    color: white;
+}
+
+.about_text {
+    font-size: 14px;
+    position: relative;
+    padding: 0.3rem 0rem;
+    color: #AEB4BE;
+}
+
+.footer_icons {
+    display: flex;
+    padding: 18px 0px;
+    margin-left: -5px;
+}
+
+.footer_icon {
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    margin: 4px;
+    font-size: 12px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,57 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.Main_div_screen {
+    background-color: white;
+    margin-bottom: 60px;
+}
+
+.display_flex {
+    padding-bottom: 32px;
+    display: flex;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.for_padding {
+    padding-top: 36px;
+}
+
+.heading_one {
+    margin-left: 14px;
+    font-size: 50px !important;
+    margin-bottom: 1.35rem;
+    color: rgb(68, 67, 67);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.left_side {
+    width: 36%;
+    padding: 56px 0px 0px 24px;
+}
+
+.right_side {
+    padding: 0px 0px 0px 44px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.para_50{
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #316db6;
+    line-height: 1.75;
+}
+
+.Shop_Now{
+   font-size: 14px;
+   background-color: rgb(204, 63, 63);
+   color: white;
+   padding: 12px 28px;
+   margin-left: 20px;
+   border-radius: 5px;
+}

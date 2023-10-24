@@ -1,0 +1,23 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.images {
+    display: flex;
+    margin: 70px 0px 0px 0px;
+    overflow: hidden;
+}
+
+.fiftysix_img {
+    height: 342px;
+    width: 100%;
+    padding-right: 24px;
+}
+
+.fiftyseven_img {
+    height: 342px;
+    width: 100%;
+    margin-right: 20px;
+}

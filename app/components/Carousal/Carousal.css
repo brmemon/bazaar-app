@@ -1,0 +1,199 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+
+.TopCategories_div {
+    display: flex;
+    width: 166.67%;
+    transition: 0.5s;
+}
+
+.TopCategories_display {
+    transition: 0.5s;
+    margin: 0px 10px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.Top_names {
+    z-index: 1;
+    color: white;
+    border-radius: 10px;
+    padding: 0px 5px;
+    margin-left: 5px;
+    margin-top: 8px;
+    background-color: rgb(64, 64, 120);
+}
+
+.orders_names {
+    background-color: rgb(224, 206, 206);
+    border-radius: 10px;
+    padding: 0px 5px;
+    margin-left: 5px;
+    margin-top: 8px;
+    z-index: 1;
+}
+
+.Top_img {
+    position: relative;
+    border-radius: 10px;
+}
+
+.name_display {
+    display: flex;
+    width: 17%;
+    justify-content: space-between;
+    position: absolute;
+}
+
+
+.Card_display {
+    display: flex;
+    width: 200%;
+    transition: 0.5s;
+}
+
+
+
+.Cars_width {
+    width: 31% !important;
+}
+
+.more_width {
+    width: 23%!important;
+}
+
+
+.cards {
+    padding-top: 24px;
+    padding-bottom: 4px;
+    margin: 0px 10px;
+    height: 10%;
+    width: calc(100% - 1.5rem);
+}
+
+.Card_style {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: 0.3s;
+    margin: auto;
+}
+
+.off_div {
+    padding-top: 10px;
+}
+
+.off {
+    padding: 0px 5px;
+    position: absolute;
+    color: white;
+    background-color: rgb(201, 65, 65);
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.name {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.values {
+    display: flex;
+}
+
+.new_val {
+    font-weight: 600;
+    color: rgb(210, 55, 55);
+}
+
+.old_val {
+    font-weight: 600;
+    text-decoration: line-through;
+}
+
+.arrow_div {
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.arrow1 {
+    cursor: pointer;
+    color: white;
+    padding: 0px 6px;
+    background-color: rgb(47, 55, 104);
+    border-radius: 60px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 40px;
+    z-index: 1;
+}
+
+.arrow2 {
+    cursor: pointer;
+    color: white;
+    padding: 0px 6px;
+    background-color: rgb(47, 55, 104);
+    border-radius: 60px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 40px;
+    z-index: 1;
+}
+
+.arrow_child {
+    width: 100%;
+    overflow: hidden;
+}
+
+.bigdiscount_div {
+    transition: 0.5s;
+    display: flex;
+    width: 150%;
+    height: 5%;
+}
+
+
+
+
+.big_div {
+    box-shadow: 0px 1px 3px rgba(3, 0, 71, 0.09);
+    width: calc(100% - 1.5rem);
+    /* padding: 1rem; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: 0.5s;
+    margin: auto;
+
+}
+
+.val_display {
+    display: flex;
+}
+
+.big_name {
+    font-size: 14px;
+    font-weight: 600;
+    /* text-align: center */
+    padding-left: 10px;
+    color: rgb(117, 142, 143);
+}
+
+.big_new {
+    color: rgb(243, 46, 46);
+    font-weight: 600;
+}
+
+.big_old {
+    color: rgb(117, 142, 143);
+    text-decoration: line-through;
+}

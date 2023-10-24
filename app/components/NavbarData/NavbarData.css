@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+.main_home {
+    position: inherit;
+    cursor: pointer;
+}
+
+.home_ul {
+    cursor: pointer;
+    position: absolute;
+}
+
+.mega_menu {
+    position: inherit;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.Mega_menu_div {
+    position: absolute;
+}
