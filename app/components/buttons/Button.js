@@ -1,5 +1,4 @@
 import React from 'react'
-// import "../Navbars./navbar.css"
 
 const Button = ({text,className}) => {
   return (
