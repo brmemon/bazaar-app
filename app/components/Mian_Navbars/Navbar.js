@@ -15,31 +15,36 @@ const Navbar = () => {
     <>
       <BlueNavbar />
       <SearchNavbar />
-      <div style={{ display: "flex" }}>
+      <div style={{ display: "flex", position: "relative" }}>
         <Data />
-        {/* <div style={{ display: "flex", gap: "2%" }}> */}
-        <span style={{ padding: "12px 16px", fontSize: "14px" }}>
+        {/* <div style={{ width:"52%", display: "flex", justifyContent: "space-between", paddingTop:"14px" }}> */}
           <HomeData />
-        </span>
-        <span style={{ padding: "12px 16px", fontSize: "14px" }}>
           <MegaMenuData />
-        </span>
-        <span style={{ padding: "12px 16px", fontSize: "14px" }}>
-          <FullScreenMenuData />
-        </span>
-        <span style={{ padding: "12px 16px", fontSize: "14px" }}>
+          <FullScreenMenuData />  
           <PagesData />
-        </span>
-        <span style={{ padding: "12px 16px", fontSize: "14px" }}>
           <UserAcountData />
-        </span>
-        <span style={{ padding: "12px 16px", fontSize: "14px" }}>
           <VendorAcountData />
-        </span>
-        {/* </di v> */}
+        {/* </div> */}
       </div>
     </>
   )
 }
-
 export default Navbar
+
+
+
+{/* <div style={{ display: "flex", gap: "2%" }}> */ }
+{/* <span style={{ padding: "12px 16px", fontSize: "14px" }}> */ }
+{/* </span> */ }
+{/* <span style={{ padding: "12px 16px", fontSize: "14px" }}>
+        </span>
+        <span style={{ padding: "12px 16px", fontSize: "14px" }}>
+        </span>
+        <span style={{ padding: "12px 16px", fontSize: "14px" }}>
+        </span>
+        <span style={{ padding: "12px 16px", fontSize: "14px" }}>
+        </span>
+        <span style={{ padding: "12px 16px", fontSize: "14px" }}>
+        </span> */}
+{/* </di v> */ }
+

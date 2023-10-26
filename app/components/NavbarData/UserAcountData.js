@@ -25,9 +25,13 @@ const UserAcountData = () => {
   }
 
   return (
-    <div style={{ position: "relative" }} onMouseLeave={handleMouseLeave}>
-      <span onMouseEnter={handleMouseEnter}>
-        <div style={{ display: "flex", alignItems: "end",fontWeight:"400", gap: "2.4px" }}>
+    <div className='main_data_div'
+      onMouseLeave={handleMouseLeave}
+    >
+      <span
+        onMouseEnter={handleMouseEnter}
+      >
+        <div style={{ display: "flex", alignItems: "end", fontWeight: "400", gap: "2.4px" }}>
           User Acount
           <BiChevronDown />
         </div>

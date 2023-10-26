@@ -25,7 +25,11 @@ const FullScreenMenuData = () => {
     };
 
     return (
-        <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{ position: "relative" }}>
+        <div 
+        className='main_data_div'
+        onMouseEnter={handleMouseEnter} 
+        onMouseLeave={handleMouseLeave} 
+        >
             <div style={{ display: "flex", alignItems: "end", fontWeight: "400", gap: "2.4px" }}>
                 Full Screen Menu
                 <BiChevronDown />

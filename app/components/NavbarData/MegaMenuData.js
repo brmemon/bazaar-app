@@ -15,23 +15,26 @@ const MegaMenuData = () => {
   };
 
   return (
-    <div className='mega_menu'>
-      <div
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
+    <div className='main_data_div'
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <div>
         <div style={{ display: "flex", alignItems: "end", fontWeight: "400", gap: "2.4px" }}>
           Mega Menu
           <BiChevronDown />
         </div>
 
         {showMenu && (
-          <ul className='Mega_menu_div'>
+          <ul className='Mega_menu_div'
+          >
             {MegaMenu.map((item, index) => (
-              <div>
-                <h3>{item.name}</h3>
+              <div className='mega'>
+                <li className='mega_li_one'>
+                  {item.name}
+                </li>
                 {item.array.map((item2, item2Index) => (
-                  <li>
+                  <li className='mega_li_two'>
                     {item2}
                   </li>
                 ))}

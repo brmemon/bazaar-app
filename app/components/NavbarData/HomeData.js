@@ -15,7 +15,7 @@ const HomeData = () => {
   }
 
   return (
-    <div className='main_home'
+    <div className='main_data_div'
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -26,11 +26,15 @@ const HomeData = () => {
             <BiChevronDown />
           </div>
           {showList && (
-            <ul className='home_ul'>
-              {Home.map((item, index) => (
-                <li>{item}</li>
-              ))}
-            </ul>
+            <div className='main_ul_div'>
+              <ul className='home_ul'>
+                {Home.map((item, index) => (
+                  <li className='home_li'>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
           )}
         </div>
       </div>

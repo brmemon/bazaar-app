@@ -1,4 +1,6 @@
 import categories_img from "../components/images/categories_img.webp"
+import categories_img_png from "../components/images/categories_img.png"
+
 export const Categories = [
     {
         name: "Fashion",
@@ -26,7 +28,8 @@ export const Categories = [
             { head: "Acessories", array: ["Belts", "Hats", "Watches", "Sunglases"] },
             { head: "Shoes", array: ["Snackers", "Sandels", "Formal", "Casual"] },
             { head: "Bags", array: ["Bagpack", "Crossbody Bags", "Side Bags", "Slides"] },
-        ]
+        ],
+        img:categories_img_png,
     },
 
     {

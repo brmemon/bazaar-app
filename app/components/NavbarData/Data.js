@@ -16,7 +16,7 @@ const Data = () => {
   };
 
   return (
-    <div className="main_data_div" onMouseLeave={handleMouseLeave}>
+    <div className="main_data_div_data" onMouseLeave={handleMouseLeave}>
       <div className='all'>
         <h2
           className="Categories"
@@ -46,7 +46,7 @@ const Data = () => {
             : false}
           <div className='main_display'>
             {data !== false || data === 0 ?
-              <div className='category_child'>
+              <div className= {data == 1?"categories_child1" :'category_child' }>
                 <div className={Categories[data]?.array && Categories[data]?.array[0]?.head ? "main_item_div" : "item_div"}>
                   {Categories[data]?.array?.map((item, index) =>
                     <div className={item?.head ? 'item_div' : 'item_name_div'}>
@@ -54,9 +54,12 @@ const Data = () => {
                         <h6 style={{ fontSize: "14px", fontWeight: "600", marginLeft: "15px" }} >
                           {item?.head}
                         </h6 > :
-                        <p className='names'>
-                          {item?.name}
-                        </p>}
+                        <div className='Names_div'>
+                          <p className='names'>
+                            {item?.name}
+                          </p>
+                        </div>
+                      }
                       {
                         item?.array?.hasOwnProperty(0) && !item?.array[0]?.head ?
                           <div>
@@ -71,8 +74,8 @@ const Data = () => {
                     </div>
                   )}
                 </div>
-                <div className='category_img'>
-                  <Image src={Categories[data].img} />
+                <div className= {data == 1? 'category_img' : 'category_img1' }>
+                  <Image  className= {data == 1? 'category_img_class' : 'category_img_class1' } src={Categories[data].img} />
                 </div>
               </div>
               : false}
