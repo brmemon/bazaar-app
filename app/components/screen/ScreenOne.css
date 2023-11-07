@@ -4,19 +4,24 @@
     box-sizing: border-box;
 }
 
+
 .Main_div_screen {
     background-color: white;
     margin-bottom: 60px;
 }
 
 .display_flex {
+    width: 200%;
     padding-bottom: 32px;
     display: flex;
     padding-left: 24px;
     padding-right: 24px;
+    transition: 1.5s linear;
 }
 
 .for_padding {
+    width: 100%;
+    overflow: hidden;
     padding-top: 36px;
 }
 
@@ -39,7 +44,7 @@
     margin-right: auto;
 }
 
-.para_50{
+.para_50 {
     margin-bottom: 20px;
     font-weight: 400;
     font-size: 14px;
@@ -47,11 +52,26 @@
     line-height: 1.75;
 }
 
-.Shop_Now{
-   font-size: 14px;
-   background-color: rgb(204, 63, 63);
-   color: white;
-   padding: 12px 28px;
-   margin-left: 20px;
-   border-radius: 5px;
+.Shop_Now {
+    font-size: 14px;
+    background-color: rgb(204, 63, 63);
+    color: white;
+    padding: 12px 28px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.slider-buttons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-buttons>input {
+    width: 15px !important;
+}
+
+.radio {
+    cursor: pointer;
 }

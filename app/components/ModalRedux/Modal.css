@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+.disabled{
+    color: gray;
+    cursor: not-allowed;
+}
+
+
+
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modal_content {
+    background-color: rgb(255, 255, 255);
+    color: rgb(43, 52, 69);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 10px -5px, rgba(0, 0, 0, 0.14) 0px 16px 24px 2px, rgba(0, 0, 0, 0.12) 0px 6px 30px 5px;
+    height: 100%;
+    z-index: 4;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    min-width: 380px;
+    overflow: auto;
+}
+
+.modal_display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 24px;
+    margin-right: 24px;
+    height: 74px;
+}
+
+.modal_hr {
+    border-width: 0px 0px thin;
+    border-style: solid;
+    border-color: rgb(243, 245, 249);
+}
+
+.image_para {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100% - 75px);
+}
+
+.modal_para {
+    margin-top: 16px;
+    font-size: 15px;
+    text-align: center;
+    width: 200px;
+    font-weight: 400;
+}
+
+.closs_button {
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.modal_data {
+    display: flex;
+    padding: 16px 20px;
+    align-items: center;
+    border: 1px solid rgb(243, 245, 249);
+}
+
+.modal_items {
+    font-size: 14px;
+}
+
+.modal_data_img {
+    font-size: 1.25rem;
+    line-height: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    user-select: none;
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 75px;
+    height: 75px;
+    display: block;
+}
+
+.three_data {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    flex: 1 1 0%;
+    text-overflow: ellipsis;
+}
+
+.modal_data_name {
+    font-size: 14px;
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.modal_data_oldval {
+    font-size: 10px;
+    font-weight: 400;
+    color: rgb(125, 135, 156);
+}
+
+.modal_data_newval {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(210, 63, 87);
+    margin-top: 4px;
+}
+
+.close_item_button {
+    margin: 0px 0px 0px 20px;
+    user-select: none;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 5px;
+    font-size: 1.125rem;
+}

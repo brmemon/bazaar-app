@@ -37,6 +37,7 @@ p{
 }
 
 .display_flex_one{
+    z-index: 2;
     position: absolute;
     width: 90%;
     padding: 8px 0px 8px 5px;

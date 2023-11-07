@@ -20,44 +20,49 @@ const PagesData = () => {
     setItemHovered(itemName);
   }
 
-  const handleItemMouseLeave = () => {
-    setItemHovered(null);
-  }
+  // const handleItemMouseLeave = () => {
+  //   setItemHovered(null);
+  // }
 
   return (
-    <div 
-    className='main_data_div'
-    onMouseLeave={handleMouseLeave}
-    >
-      <span 
+    <div
+      className='main_data_div'
+      onMouseLeave={handleMouseLeave}
       onMouseEnter={handleMouseEnter}
-      >
-      <div style={{ display: "flex", alignItems: "end",fontWeight:"400", gap: "2.4px" }}>
-          Pages
-          <BiChevronDown />
-        </div>
-      </span>
+    >
+      <div style={{ display: "flex", alignItems: "end", fontWeight: "400", gap: "2.4px" }}>
+        Pages
+        <BiChevronDown />
+      </div>
+      {/* <div > */}
       {dataPage && (
-        <div>
-          <ul>
-            {Pages.map((item, index) => (
-              <li
-                onMouseEnter={() => handleItemMouseEnter(item.name)}
-                onMouseLeave={handleItemMouseLeave}
-              >
-                {item?.name}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-      {itemHovered && (
-        <div>
-          <ul>
-            {Pages.find(item => item.name === itemHovered)?.array.map((item2, index) => (
-              <li>{item2}</li>
-            ))}
-          </ul>
+        <div style={{ position: "absolute", zIndex:"2" }}>
+          <div style={{ display: "flex" }}>
+            <div className='page_div'>
+              <ul className='ul_first_div'>
+                {Pages.map((item, index) => (
+                  <li
+                    className='first_li_page'
+                    onMouseEnter={() => handleItemMouseEnter(item.name)}
+                  // onMouseLeave={handleItemMouseLeave}
+                  >
+                    {item?.name}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            {itemHovered && (
+              <>
+                <ul
+                  className={itemHovered === Pages[0].name ? "second_ul_one" : "socond" && itemHovered === Pages[1].name ? "second_ul_two" : "socond" && itemHovered === Pages[2].name ? "second_ul_three" : "socond"}
+                >
+                  {Pages.find(item => item.name === itemHovered)?.array.map((item2, index) => (
+                    <li className='second_li'>{item2}</li>
+                  ))}
+                </ul>
+              </>
+            )}
+          </div>
         </div>
       )}
     </div>

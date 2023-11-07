@@ -26,7 +26,7 @@ const CardCarousal = ({ data, className, num, ind }) => {
         <>
             <div className='arrow_div'>
                 <BsArrowLeft className='arrow1' onClick={handlePrev} />
-                <div className='arrows_child'>
+                <div style={{width:"100%"}}>
                     <div className={className} style={{ transform: `translateX(${currentIndex}%)` }}>
                         {data?.map((item, index) => (
                             ind == 0 ?

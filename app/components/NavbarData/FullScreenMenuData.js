@@ -5,7 +5,7 @@ import { BiChevronDown } from 'react-icons/bi';
 
 const FullScreenMenuData = () => {
     const [showMenu, setShowMenu] = useState(false);
-    const [activeCategory, setActiveCategory] = useState(null);
+    const [activeCategory, setActiveCategory] = useState(0);
 
     const handleMouseEnter = () => {
         setShowMenu(true);
@@ -13,7 +13,7 @@ const FullScreenMenuData = () => {
 
     const handleMouseLeave = () => {
         setShowMenu(false);
-        setActiveCategory(null);
+        setActiveCategory(0);
     };
 
     const handleCategoryMouseEnter = (index) => {
@@ -21,44 +21,59 @@ const FullScreenMenuData = () => {
     };
 
     const handleCategoryMouseLeave = () => {
-        setActiveCategory(null);
+        setActiveCategory(false);
     };
 
     return (
-        <div 
-        className='main_data_div'
-        onMouseEnter={handleMouseEnter} 
-        onMouseLeave={handleMouseLeave} 
+        <div
+            className='main_data_div_two'
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
         >
-            <div style={{ display: "flex", alignItems: "end", fontWeight: "400", gap: "2.4px" }}>
-                Full Screen Menu
-                <BiChevronDown />
-            </div>
-
-            {showMenu && (
-                <div style={{ position: "absolute", zIndex: "1" }}>
-                    {FullScreenMenu.map((category, index) => (
-                        <div
-                            onMouseEnter={() => handleCategoryMouseEnter(index)}
-                            onMouseLeave={handleCategoryMouseLeave}
-                        >
-                            <h1>{category.name}</h1>
-                            {activeCategory === index && (
-                                <ul>
-                                    {category.array.map((subCategory, subIndex) => (
-                                        <li style={{ display: "flex " }}>
-                                            <h3>{subCategory.name}</h3>
-                                            {subCategory.array.map((item, itemIndex) => (
-                                                <li>{item}</li>
-                                            ))}
-                                        </li>
-                                    ))}
-                                </ul>
-                            )}
-                        </div>
-                    ))}
+            <div className='menu_data'>
+                <div style={{ display: "flex", alignItems: "end", fontWeight: "400", gap: "2.4px" }}>
+                    Full Screen Menu
+                    <BiChevronDown />
                 </div>
-            )}
+
+                {showMenu && (
+                    <div className='all_main'>
+                        <div className='first_menu'>
+                            {FullScreenMenu.map((category, index) => (
+                                <div
+                                    className='div_div'
+                                    onMouseEnter={() => handleCategoryMouseEnter(index)} 
+                                >
+                                    <h1 className='full_screen'>
+                                        {category.name}
+                                    </h1>
+                                </div>
+                            )
+                            )
+                            }
+                        </div>
+                        {activeCategory >= 0 && (
+                            <ul className='ul_full_screen'>
+                                {FullScreenMenu[activeCategory]?.array.map((subCategory, subIndex) => (
+                                    <>
+                                        <h6 className='second_full_screen'>
+                                            {subCategory.name}
+                                        </h6>
+                                        <span className='screen_last_li'>
+                                            {subCategory.array.map((item, itemIndex) => (
+                                                <li className='full_screen_lastitem'>{item}</li>
+                                            )
+                                            )
+                                            }
+                                        </span>
+                                    </>
+                                ))}
+                            </ul>
+                        )}
+                    </div>
+                )
+                }
+            </div>
         </div>
     );
 }

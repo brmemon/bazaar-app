@@ -72,8 +72,7 @@
     padding-top: 24px;
     padding-bottom: 4px;
     margin: 0px 10px;
-    height: 10%;
-    width: calc(100% - 1.5rem);
+    width: calc(25% - 20px);
 }
 
 .Card_style {
@@ -168,7 +167,6 @@
 .big_div {
     box-shadow: 0px 1px 3px rgba(3, 0, 71, 0.09);
     width: calc(100% - 1.5rem);
-    /* padding: 1rem; */
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     transition: 0.5s;
@@ -183,7 +181,6 @@
 .big_name {
     font-size: 14px;
     font-weight: 600;
-    /* text-align: center */
     padding-left: 10px;
     color: rgb(117, 142, 143);
 }

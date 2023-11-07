@@ -12,39 +12,21 @@ import VendorAcountData from '../NavbarData/VendorAcountData'
 
 const Navbar = () => {
   return (
-    <>
+    <div style={{height:"175px"}}>
+      <>
       <BlueNavbar />
       <SearchNavbar />
       <div style={{ display: "flex", position: "relative" }}>
         <Data />
-        {/* <div style={{ width:"52%", display: "flex", justifyContent: "space-between", paddingTop:"14px" }}> */}
           <HomeData />
           <MegaMenuData />
           <FullScreenMenuData />  
           <PagesData />
           <UserAcountData />
           <VendorAcountData />
-        {/* </div> */}
       </div>
-    </>
+      </>
+    </div>
   )
 }
 export default Navbar
-
-
-
-{/* <div style={{ display: "flex", gap: "2%" }}> */ }
-{/* <span style={{ padding: "12px 16px", fontSize: "14px" }}> */ }
-{/* </span> */ }
-{/* <span style={{ padding: "12px 16px", fontSize: "14px" }}>
-        </span>
-        <span style={{ padding: "12px 16px", fontSize: "14px" }}>
-        </span>
-        <span style={{ padding: "12px 16px", fontSize: "14px" }}>
-        </span>
-        <span style={{ padding: "12px 16px", fontSize: "14px" }}>
-        </span>
-        <span style={{ padding: "12px 16px", fontSize: "14px" }}>
-        </span> */}
-{/* </di v> */ }
-

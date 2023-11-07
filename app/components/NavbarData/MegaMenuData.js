@@ -30,9 +30,9 @@ const MegaMenuData = () => {
           >
             {MegaMenu.map((item, index) => (
               <div className='mega'>
-                <li className='mega_li_one'>
+                <h2 className='mega_li_one'>
                   {item.name}
-                </li>
+                </h2>
                 {item.array.map((item2, item2Index) => (
                   <li className='mega_li_two'>
                     {item2}

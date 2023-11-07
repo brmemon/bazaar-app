@@ -5,10 +5,14 @@
     line-height: 1.5;
 }
 
+.container {
+    max-height: 360px;
+    overflow-y: auto;
+}
+
+
 .main_div {
     margin-bottom: 20px;
-    height: 100%;
-    margin-top: 20px;
     z-index: 3;
     position: relative;
     display: flex;
@@ -42,7 +46,6 @@ input {
 
 .allCategories {
     position: fixed;
-    /* right: 27.3%; */
     top: 99px;
     border: 1px solid rgb(219, 218, 218);
     color: black;
@@ -73,7 +76,7 @@ input {
 
 }
 
-.search_btn_one{
+.search_btn_one {
     background-color: rgb(232, 231, 231);
     border-radius: 20px;
     width: 40px;
@@ -84,7 +87,7 @@ input {
     margin: 0px 5px;
 }
 
-.search_btn_two{
+.search_btn_two {
     margin: 0px 5px;
     background-color: rgb(232, 231, 231);
     border-radius: 20px;
@@ -95,8 +98,27 @@ input {
     justify-content: center;
 }
 
-.bazar_img{
+.bazar_img {
     margin-right: 11%;
     width: 93px;
     margin-left: 10px;
+}
+.show_navbar {
+    box-shadow: 10px 14px 55px rgb(202, 201, 201);
+    padding-top: 15px;
+    transition: 1s linear;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    height: 100%;
+    width: 100% !important;
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    margin: 0;
+    
+}
+.hide_navbar{
+    background-color: transparent;
+    top: -80px
 }
