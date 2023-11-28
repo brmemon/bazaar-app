@@ -53,7 +53,7 @@ const Modal = ({ onClose }) => {
           cardData?.length === 0 ?
 
             <div className='image_para'>
-              <Image src={shopping_modal} alt='Nikal' />
+              <Image src={shopping_modal} alt='??????' />
               <h6 className='modal_para'>Your shopping bag is empty. Start shopping</h6>
             </div>
             :
