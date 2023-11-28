@@ -1,24 +1,47 @@
 "use client"
 import React, { useState } from 'react'
 import { LiaMinusSquare, LiaPlusSquareSolid } from 'react-icons/lia'
-import { useDispatch } from 'react-redux'
-import { AddCard, Updateitems } from '../Redux/BazarSlice'
+import { useDispatch, useSelector } from 'react-redux'
+import { AddCard, DeleteItem, Updateitems } from '../Redux/BazarSlice'
+import { useEffect } from 'react'
 
 
-const PlusButton = ( item, index ) => {
+const PlusButton = (item, index) => {
+    const { bazarcard } = useSelector((e) => e)
+
     const dispatch = useDispatch();
 
     const [count, setCount] = useState(0);
 
+
+    useEffect(() => {
+        let ind = bazarcard.findIndex((item2, index2) =>
+            item2?.item?.name == item?.item?.name
+        )
+        if (ind != -1 && bazarcard.length != 0) {
+            setCount(bazarcard[ind]?.quantity)
+
+        }
+        else setCount(0)
+    }, [bazarcard])
+
     const handleIncrement = () => {
-        let tempitem = {...item}
+        let tempitem = { ...item }
         tempitem.quantity = count + 1
-        { count == 0 ? dispatch(AddCard(tempitem)) : dispatch(Updateitems(tempitem)) }
-        // dispatch(AddCard(tempitem))
+        dispatch(count == 0 ? AddCard(tempitem) : Updateitems(tempitem))
         setCount(count + 1);
     }
 
     const handleDecrement = () => {
+        let tempitem = { ...item };
+        tempitem.quantity = count - 1;
+
+        if (tempitem.quantity === 0) {
+            dispatch(DeleteItem(tempitem));
+        } else {
+            dispatch(Updateitems(tempitem));
+        }
+
         setCount(count - 1);
     }
 

@@ -15,35 +15,37 @@ import WithoutCarouCardThree from '../Carousal/FirstCarouWithoutCarou/WithoutCar
 import MainSmallCard from '../SmallCard/MainSmallCard'
 import WithoutCarouOne from '../Carousal/SecondCarouWithoutCarou/WithoutCarouOne'
 import FooterCards from '../FooterCardsBox/FooterCards'
-
+import "./Body.css"
 
 const Body = () => {
   return (
-    <div style={{ backgroundColor: '#F6F9FC', padding: '0px 54px' }}>
-      <FlashDeals />
-      <TopCategories />
-      <div style={{ display: "flex", width: "100%", gap: "4%" }}>
-        <TopRatings />
-        <FeaturedBrand />
+    <div className='mainwraper'>
+      <div className='wraperchild' >
+        <FlashDeals />
+        <TopCategories />
+        <div className='toprating_topcategories'>
+          <TopRatings />
+          <FeaturedBrand />
+        </div>
+        <NewArrivals />
+        <BigDiscounts />
+        <div style={{ display: "flex", width: "100%", gap: "2%" }}>
+          <CardBoxOne />
+          <WithoutCarouCardOne />
+        </div>
+        <div style={{ display: "flex", width: "100%", gap: "2%" }}>
+          <CardBoxTwo />
+          <WithoutCarouCardTwo />
+        </div>
+        <ImagesData />
+        <div style={{ display: "flex", width: "100%", gap: "2%" }}>
+          <CardBoxThree />
+          <WithoutCarouCardThree />
+        </div>
+        <MainSmallCard />
+        <WithoutCarouOne />
+        <FooterCards />
       </div>
-      <NewArrivals />
-      <BigDiscounts />
-      <div style={{ display: "flex", width: "100%", gap: "2%" }}>
-        <CardBoxOne />
-        <WithoutCarouCardOne />
-      </div>
-      <div style={{ display: "flex", width: "100%", gap: "2%" }}>
-        <CardBoxTwo />
-        <WithoutCarouCardTwo />
-      </div>
-      <ImagesData />
-      <div style={{ display: "flex", width: "100%", gap: "2%" }}>
-        <CardBoxThree />
-        <WithoutCarouCardThree />
-      </div>
-      <MainSmallCard />
-      <WithoutCarouOne />
-      <FooterCards />
     </div>
   )
 }

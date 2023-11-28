@@ -5,7 +5,7 @@ import shoes from '../images/shoes.png';
 const ScreenOneCopy = () => {
     return (
         <>
-            <div style={{ width: "100%", display:"flex" }}>
+            <div className='left_right_main'>
                 <div className="left_side">
                     <h1 className="heading_one"><b>50% Off For Your First Shopping</b></h1>
                     <p className="para_50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis

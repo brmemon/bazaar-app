@@ -4,7 +4,7 @@ import WithoutCarouCardThreeCard from './WithoutCarouCardThreeCard'
 
 const WithoutCarouCardThree = () => {
   return (
-    <div style={{width:"78%"}}>
+    <div className='mainmain_opticswatch'>
       <MainHeadings heading={"Optics / Watch"}/>
       <WithoutCarouCardThreeCard />
     </div>

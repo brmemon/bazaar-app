@@ -13,7 +13,6 @@
     border-radius: 10px;
     padding: 16px 16px;
     background-color: white;
-
 }
 
 .Rating_names {
@@ -26,9 +25,6 @@
     color: rgb(233, 42, 42);
     padding: 0 !important;
 }
-
-
-
 
 .FeaturedBrand_div {
     display: flex;
@@ -43,10 +39,6 @@
 .Featured_img {
     border-radius: 10px;
 }
-
-
-
-
 
 .NewArrivals_div {
     display: flex;
@@ -66,4 +58,52 @@
     color: rgb(233, 42, 42);
     padding: 0 !important;
     margin: 0 !important;
+}
+
+@media only screen and (max-width: 1279px) {
+    .media_toprating {
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        text-align: center;
+    }
+
+    .Rating_value {
+        margin: 0;
+    }
+
+    .NewArrivals_div {
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: white;
+    }
+
+    .Arrivals_div {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 959px) {
+
+    .Rating_div {
+        flex-wrap: wrap;
+    }
+
+    .Rating {
+        width: 50%;
+    }
+
+    .Arrivals_div {
+        width: 33%;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .FeaturedBrand_div {
+        display: block;
+    }
+
+    .Arrivals_div {
+        width: 50%;
+    }
 }

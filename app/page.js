@@ -4,16 +4,18 @@ import ScreenOne from './components/screen/ScreenOne'
 import Body from './components/pageBody/Body'
 import Navbar from './components/Mian_Navbars/Navbar'
 import LastFooter from './components/LastFooter/LastFooter'
-import Modal from './components/ModalRedux/Modal'
+import MediaQuerryCard from './components/MediaQuerryCard/MediaQuerryCard'
 
 const page = () => {
   return (
     <div>
       <Navbar />
-      <ScreenOne />
+      <div style={{ maxWidth: "1284px", margin: "auto" }}>
+        <ScreenOne />
+      </div>
       <Body />
       <LastFooter />
-      {/* <Modal /> */}
+      <MediaQuerryCard />
     </div>
   )
 }

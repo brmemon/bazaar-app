@@ -1,6 +1,5 @@
 import React from 'react'
 import MainHeadings from '../../Headings/MainHeadings'
-import WithoutCarouCardOneCard from '../FirstCarouWithoutCarou/WithoutCrouCardOneCard'
 import WithoutCarouOneCard from './WithoutCarouOneCard'
 
 const WithoutCarouOne = () => {

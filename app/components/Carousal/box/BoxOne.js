@@ -17,10 +17,8 @@ const BoxOne = ({ item, index, className }) => {
                             <p className='name'>{item?.name}</p>
                             <Stars />
                             <div className="values flex ">
-                                {/* <div className='flex'> */}
                                 <p className='new_val'>{item?.newVal}</p>
                                 <p className="old_val">{item?.oldVal}</p>
-                                {/* </div> */}
                                 <div>
                                 </div>
                             </div>

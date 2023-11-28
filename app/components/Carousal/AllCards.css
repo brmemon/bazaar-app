@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.toprating {
+    width: 48%;
+}
+
+.featuredbrand {
+    width: 48%;
+}
+
+@media only screen and (max-width: 1279px) {
+    .toprating {
+        width: 100%;
+    }
+
+    .featuredbrand {
+        width: 100%;
+    }
+}

@@ -4,7 +4,7 @@ import "../SimpleBox/SimpleBox.css"
 import BoxOne from '../box/BoxOne'
 const WithoutCarouCardOneCard = () => {
   return (
-    <div style={{ display: "flex", flexWrap: "wrap" }}>
+    <div className='mainmain_cars_main'>
       {DataCardOneCard.map((item, index) =>
         <BoxOne item={item} index={index} className={"cards Cars_width"} />
       )}

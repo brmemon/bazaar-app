@@ -12,19 +12,21 @@ import VendorAcountData from '../NavbarData/VendorAcountData'
 
 const Navbar = () => {
   return (
-    <div style={{height:"175px"}}>
+    <div>
       <>
-      <BlueNavbar />
-      <SearchNavbar />
-      <div style={{ display: "flex", position: "relative" }}>
-        <Data />
-          <HomeData />
-          <MegaMenuData />
-          <FullScreenMenuData />  
-          <PagesData />
-          <UserAcountData />
-          <VendorAcountData />
-      </div>
+        <BlueNavbar />
+        <SearchNavbar />
+        <div style={{ maxWidth: "1360px", margin: "auto" }}>
+          <div style={{ display: "flex", position: "relative", width: "100%" }}>
+            <Data />
+            <HomeData />
+            <MegaMenuData />
+            <FullScreenMenuData />
+            <PagesData />
+            <UserAcountData />
+            <VendorAcountData />
+          </div>
+        </div>
       </>
     </div>
   )

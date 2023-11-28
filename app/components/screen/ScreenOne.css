@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.left_right_main {
+    display: flex;
+    width: 100%;
+}
+
 
 .Main_div_screen {
     background-color: white;
@@ -14,8 +19,6 @@
     width: 200%;
     padding-bottom: 32px;
     display: flex;
-    padding-left: 24px;
-    padding-right: 24px;
     transition: 1.5s linear;
 }
 
@@ -27,7 +30,7 @@
 
 .heading_one {
     margin-left: 14px;
-    font-size: 50px !important;
+    font-size: 49px !important;
     margin-bottom: 1.35rem;
     color: rgb(68, 67, 67);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -74,4 +77,72 @@
 
 .radio {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 1089px) {
+    .left_side {
+        width: 42%;
+    }
+}
+
+
+@media only screen and (max-width: 934px) {
+    .left_side {
+        width: 50%;
+    }
+
+    .right_side {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    .right_side {
+        margin-top: 35px;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .left_right_main {
+        display: block;
+    }
+
+    .left_side {
+        width: 100%;
+        padding: 0%;
+    }
+
+    .right_side {
+        width: 100%;
+    }
+
+    .heading_one {
+        font-size: 36px !important;
+        margin: 0;
+        font-weight: 300;
+    }
+
+    .para_50 {
+        margin-right: 37px;
+        margin-left: 0;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .for_padding {
+        padding: 20px 0px 10px 10px;
+    }
+
+    .Shop_Now {
+        margin-top: 15px;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    .right_side{
+        padding: 0;
+    }
 }

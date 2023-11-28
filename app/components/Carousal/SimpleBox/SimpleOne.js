@@ -9,9 +9,11 @@ const SimpleOne = () => {
             {DataTopRatings.map((item, index) =>
                 <div className='Rating'>
                     <Image src={item?.img} />
-                    <Stars className="RatingStar"/>
-                    <h4 className='Rating_names'>{item?.name}</h4>
-                    <p className='Rating_value'>{item?.value}</p>
+                    <div className='media_toprating'>
+                        <Stars className="RatingStar" />
+                        <h4 className='Rating_names'>{item?.name}</h4>
+                        <p className='Rating_value'>{item?.value}</p>
+                    </div>
                 </div>
             )}
         </div>

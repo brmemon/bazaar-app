@@ -1,0 +1,38 @@
+.mainwraper {
+    background-color: #F6F9FC;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wraperchild {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.toprating_topcategories {
+    display: flex;
+    width: 100%;
+    gap: 4%;
+}
+
+@media only screen and (max-width: 1279px) {
+
+    .mainwraper {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .toprating_topcategories {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .mainwraper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

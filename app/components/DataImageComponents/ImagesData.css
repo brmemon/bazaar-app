@@ -21,3 +21,31 @@
     width: 100%;
     margin-right: 20px;
 }
+
+
+
+
+
+
+@media only screen and (max-width: 1149px) {
+    .fiftyseven_img {
+        width: 64%;
+    }
+}
+
+@media only screen and (max-width: 959px) {
+    .images {
+        display: block;
+    }
+
+    .fiftysix_img {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .fiftyseven_img {
+        width: 100%;
+        padding-right: 0;
+        padding-top: 24px;
+    }
+}

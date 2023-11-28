@@ -1,10 +1,11 @@
 import React from 'react'
 import MainHeadings from '../../Headings/MainHeadings'
 import WithoutCarouCardOneCard from './WithoutCrouCardOneCard'
+import "./WithoutCarouCards.css" 
 
 const WithoutCarouCardOne = () => {
   return (
-    <div style={{width:"78%"}}>
+    <div className='mainmain_cars' >
       <MainHeadings heading={"Cars"}/>
       <WithoutCarouCardOneCard />
     </div>

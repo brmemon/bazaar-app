@@ -4,11 +4,12 @@ import { FcRating } from 'react-icons/fc'
 import { DataTopRatings } from '@/app/Data/CarousalCardData/DataTopRatings'
 import SimpleOne from './SimpleBox/SimpleOne'
 import "./SimpleBox/SimpleBox.css"
+import "./AllCards.css"
 
 const TopRatings = () => {
   return (
     <>
-    <div style={{width:"48%"}}>
+    <div className='toprating'>
       <MainHeadings logo={<FcRating/>} heading={"Top Ratings"}/>
       <SimpleOne data={DataTopRatings} />
       </div>

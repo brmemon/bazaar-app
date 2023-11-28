@@ -1,0 +1,46 @@
+.mainmain_cars {
+    width: 78%;
+}
+
+.mainmain_mobilephones {
+    width: 78%;
+}
+
+.mainmain_opticswatch {
+    width: 78%;
+}
+
+.mainmain_cars_main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mainmian_more_mian {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+@media only screen and (max-width: 959px) {
+    .mainmain_cars {
+        width: 100%;
+    }
+
+    .mainmain_mobilephones {
+        width: 100%;
+    }
+
+    .mainmain_opticswatch {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .mainmain_cars_main {
+        display: block;
+    }
+
+    .mainmian_more_mian {
+        display: block;
+    }
+}

@@ -5,7 +5,7 @@ import BoxOne from '../box/BoxOne'
 const WithoutCarouOneCard = () => {
   return (
     <div>
-      <div style={{ display: "flex", flexWrap: "wrap" }}>
+      <div className='mainmian_more_mian'>
       {DataCardFour.map((item, index) =>
         <BoxOne item={item} index={index} className={"cards more_width"} />
       )}

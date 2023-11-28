@@ -42,7 +42,7 @@ const FullScreenMenuData = () => {
                             {FullScreenMenu.map((category, index) => (
                                 <div
                                     className='div_div'
-                                    onMouseEnter={() => handleCategoryMouseEnter(index)} 
+                                    onMouseEnter={() => handleCategoryMouseEnter(index)}
                                 >
                                     <h1 className='full_screen'>
                                         {category.name}

@@ -4,6 +4,8 @@ import { AiOutlineTwitter } from "react-icons/ai"
 import { AiFillFacebook } from "react-icons/ai"
 import { AiOutlineInstagram } from "react-icons/ai"
 import Button from "../buttons/Button"
+import { BiChevronDown } from "react-icons/bi"
+import { FaPlus } from "react-icons/fa6";
 
 const BlueNavbar = () => {
   return (
@@ -15,12 +17,15 @@ const BlueNavbar = () => {
             <span className="free_div">Free Express Shipping</span>
           </div>
           <div className="icons">
-            <Button className="DE_button" text={'DE^'} />
+            <Button className="DE_button" text={<span className="flex items-center">EN <BiChevronDown /></span>} />
             <div className="three_icons">
               <AiOutlineTwitter />
               <AiFillFacebook />
               <AiOutlineInstagram />
             </div>
+          </div>
+          <div className="media_button">
+            <FaPlus />
           </div>
         </div>
       </div>

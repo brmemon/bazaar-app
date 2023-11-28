@@ -81,8 +81,3 @@ export const Categories = [
     { name: "Groceries" },
     { name: "Automotiv" },
 ]
-
-
-
-
-

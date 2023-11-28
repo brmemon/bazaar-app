@@ -4,7 +4,7 @@ import WithoutCarouCardTwoCard from './WithoutCarouCardTwoCard'
 
 const WithoutCarouCardTwo = () => {
   return (
-    <div style={{width:"78%"}}>
+    <div className='mainmain_mobilephones'>
       <MainHeadings heading={"Mobile Phones"}/>
       <WithoutCarouCardTwoCard />
     </div>

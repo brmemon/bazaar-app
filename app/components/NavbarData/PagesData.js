@@ -20,10 +20,6 @@ const PagesData = () => {
     setItemHovered(itemName);
   }
 
-  // const handleItemMouseLeave = () => {
-  //   setItemHovered(null);
-  // }
-
   return (
     <div
       className='main_data_div'
@@ -34,7 +30,6 @@ const PagesData = () => {
         Pages
         <BiChevronDown />
       </div>
-      {/* <div > */}
       {dataPage && (
         <div style={{ position: "absolute", zIndex:"2" }}>
           <div style={{ display: "flex" }}>
@@ -44,7 +39,6 @@ const PagesData = () => {
                   <li
                     className='first_li_page'
                     onMouseEnter={() => handleItemMouseEnter(item.name)}
-                  // onMouseLeave={handleItemMouseLeave}
                   >
                     {item?.name}
                   </li>

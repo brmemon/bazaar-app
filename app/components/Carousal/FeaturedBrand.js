@@ -7,10 +7,9 @@ import { DataFeaturedBrand } from '@/app/Data/CarousalCardData/DataFeaturedBrand
 const FeaturedBrand = () => {
     return (
         <>
-            <div style={{ width: "48%" }}>
+            <div className='featuredbrand'>
                 <MainHeadings logo={<GiSeaStar style={{ color: "gold" }} />} heading={"Featured Brands"} />
                 <SimpleTwo data={DataFeaturedBrand} />
-
             </div>
         </>
     )

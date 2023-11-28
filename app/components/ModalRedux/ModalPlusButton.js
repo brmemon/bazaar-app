@@ -1,84 +1,26 @@
-// "use client"
-// import React, { useState } from 'react'
-// import { useDispatch } from 'react-redux'
-// import { AddCard, UpdateQuantity } from '../Redux/BazarSlice'
-// import { AiOutlineMinusCircle, AiOutlinePlusCircle } from 'react-icons/ai'
-
-
-// const ModalPlusButton = ({item, index}) => {
-//     const dispatch = useDispatch();
-
-//     const [count, setCount] = useState(item?.quantity);
-//     console.log(item,"data")
-
-//     const handleIncrement = () => {
-//         // dispatch(UpdateQuantity(item))
-//         setCount(count + 1);
-//     }
-
-//     const handleDecrement = () => {
-//         setCount(count - 1);
-//     }
-
-//     return (
-//         <div style={{ color: "red", cursor: "pointer" }}>
-
-//             <div
-//                 style={{ fontSize: "20px", userSelect: "none" }}
-//                 onClick={handleIncrement}>
-//                 <AiOutlinePlusCircle />
-//             </div>
-
-//             <div
-//                 style={{ fontSize: "15px", color: "black", fontWeight: "500" }}>
-//                 {count ? count : false}
-//             </div>
-
-//             <div
-//                 style={{ fontSize: "20px", fontWeight: "400" }}
-//                 onClick={handleDecrement}>
-//                 <AiOutlineMinusCircle />
-//             </div>
-//         </div>
-//     )
-// }
-
-// export default ModalPlusButton
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React, { useState } from 'react'
-import { useDispatch } from 'react-redux'
-import { AddCard, UpdateQuantity, Updateitems } from '../Redux/BazarSlice'
 import { AiOutlineMinusCircle, AiOutlinePlusCircle } from 'react-icons/ai'
+import { useDispatch, useSelector } from 'react-redux';
+import { UpdateModalitems } from '../Redux/BazarSlice';
+import { useEffect } from 'react';
 
 const ModalPlusButton = ({ item, index }) => {
-    const [count, setCount] = useState(item?.quantity);
-
+    const { bazarcard } = useSelector((e) => e)
+    const dispatch = useDispatch();
+    const [count, setCount] = useState(0);
+    useEffect(() => {
+        setCount(bazarcard[index]?.quantity)
+    }, [bazarcard])
     const handleIncrement = () => {
+        let obj = { ind: index, quantity: 1 }
+        dispatch(UpdateModalitems(obj))
         setCount(count + 1);
     }
 
     const handleDecrement = () => {
         if (count > 1) {
+            let obj = { ind: index, quantity: -1 }
+            dispatch(UpdateModalitems(obj))
             setCount(count - 1);
         }
     }

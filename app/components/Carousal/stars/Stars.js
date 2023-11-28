@@ -3,7 +3,7 @@ import { AiFillStar } from 'react-icons/ai'
 
 const Stars = () => {
   return (
-    <div style={{display:'flex', marginLeft:'15px', color:'gold', fontSize:'17px'}}>
+    <div style={{ display: 'flex', marginLeft: '15px', color: 'gold', fontSize: '17px', }}>
       <AiFillStar />
       <AiFillStar />
       <AiFillStar />
