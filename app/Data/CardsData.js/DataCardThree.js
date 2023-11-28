@@ -1,8 +1,8 @@
 import rayban from "../../components/images/fiftyeight.png"
 import zeiss from "../../components/images/fiftynine.png"
 import occular from "../../components/images/sisty.png"
-import apple from "../../components/images/sistyone.png"
-import titan from "../../components/images/sistytwo.png"
+import apple from "../../components/images/sistyOne.png"
+import titan from "../../components/images/sistyTwo.png"
 
 
 export const DataCardThree = [
